@@ -40,7 +40,7 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 3000
+    targetPort: 4000
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -50,7 +50,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: fls.devops.cl
+  - host: fl.devops.cl
     http: 
       paths: 
       - path: /
