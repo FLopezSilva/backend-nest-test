@@ -25,7 +25,7 @@ spec:
         image: us-west1-docker.pkg.dev/lab-agibiz/docker-repository/backend-nest-test-fls
         imagePullPolicy: Always
       imagePullSecrets: 
-      - name: regcred
+      - name: regcrednew
 ---
 apiVersion: v1
 kind: Service
