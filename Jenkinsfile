@@ -55,7 +55,7 @@ pipeline {
                 }
             }
             steps {
-                withKubeConfig([credentialsId: 'gcp=kubeconfig']){
+                withKubeConfig([credentialsId: 'gcp-kubeconfig']){
                     sh "kubectl -n lab-fls set image deployments/backend-nest-test-fls backend-nest-test-fls=${dockerImageName}/backend-nest-test-fls:${BUILD_NUMBER}"
                 }
             }
